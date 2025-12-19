@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Colors -->
+    <color name="backgroundColor">#F5F5F5</color>  <!-- Light Gray Background -->
+    <color name="white">#FFFFFF</color>  <!-- White Color -->
+
+    <!-- Primary Colors -->
+    <color name="primaryColor">#3F51B5</color>  <!-- Blue -->
+    <color name="secondaryColor">#009688</color>  <!-- Teal -->
+    <color name="accentColor">#FF5722</color>  <!-- Orange -->
+
+    <!-- Button Colors -->
+    <color name="successColor">#4CAF50</color>  <!-- Green -->
+    <color name="errorColor">#F44336</color>  <!-- Red -->
+
+    <!-- Border & Text Colors -->
+    <color name="grayBorder">#BDBDBD</color>  <!-- Light Gray Border -->
+    <color name="textPrimary">#212121</color>  <!-- Dark Text -->
+    <color name="textSecondary">#757575</color>  <!-- Light Gray Text -->
+</resources>

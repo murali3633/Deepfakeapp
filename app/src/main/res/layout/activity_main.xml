@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Deepfake Image Detector"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+
+    <!-- Image Preview with Border -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/grayBorder"
+        app:cardBackgroundColor="@color/white">
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Image Preview"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Upload Button -->
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image/Video"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"/>
+
+    <!-- Submit Button (Appears After Upload) -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit for Detection"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:elevation="4dp"
+        android:visibility="gone"/> <!-- Hidden initially -->
+
+    <!-- Result Text (Appears After Detection) -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="gone"/> <!-- Hidden initially -->
+
+</LinearLayout>

@@ -1,7 +1,7 @@
 # Deepfake Detection App 🕵️‍♂️🚫
 
 An Android application designed to detect deepfake images using a deep learning model (Xception) directly on your device.
-
+ 
 ## 🚀 Features
 - **Dual Input Methods**: Import images from your **Gallery** or capture new ones using the **Camera**.
 - **On-Device Analysis**: Uses **TensorFlow Lite** for fast, offline deepfake detection.
